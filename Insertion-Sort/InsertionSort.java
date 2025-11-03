@@ -5,8 +5,8 @@ public class InsertionSort {
     public static void insertionSort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
-            int key = arr[i];
-            int j = i - 1;
+            int key = arr[i]; // Element to be inserted at the correct position
+            int j = i - 1; // Index of the last sorted element
 
             // Move elements of arr[0..i-1], that are greater than key,
             // to one position ahead of their current position

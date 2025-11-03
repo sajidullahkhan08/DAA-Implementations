@@ -17,11 +17,11 @@ public class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swapped = true;
+                    swapped = true; // Set swapped to true if a swap occurred because of which we need to continue the outer loop
                 }
             }
 
-            // If no two elements were swapped in the inner loop, then break
+            // If no two elements were swapped in the inner loop, then break because the array is already sorted and no need to continue
             if (swapped == false) {
                 break;
             }
